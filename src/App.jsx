@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useState } from "react";
 import Navigation from './components/Navigation';
-import Blog from './Blog';
+import Blog from './blog';
 import './App.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation as SwiperNavigation, Pagination } from 'swiper/modules';
