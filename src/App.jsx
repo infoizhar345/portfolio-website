@@ -281,17 +281,17 @@ function HomePage() {
                 Helping brands grow with smart design, video storytelling, and data-driven digital marketing.
               </p>
             </div>
-            <div className="col-span-1 col-start-2 row-start-1 flex justify-end lg:col-start-2 lg:justify-center">
-              <img
-                src="/src/assets/grapic designer png.PNG"
-                alt="Professional Portrait"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                className="w-full max-w-[160px] sm:max-w-[220px] md:max-w-[280px] lg:max-w-none lg:w-full object-contain drop-shadow-xl transition-transform duration-300 scale-150 sm:scale-110 lg:scale-125"
-                style={{ zIndex: 10 }}
-              />
-            </div>
+           <div className="col-span-1 col-start-2 row-start-1 flex justify-end lg:col-start-2 lg:justify-center">
+  <img
+    src="/images/grapic-designer-png.png"
+    alt="Professional Portrait"
+    loading="eager"
+    fetchPriority="high"
+    decoding="async"
+    className="w-full max-w-[160px] sm:max-w-[220px] md:max-w-[280px] lg:max-w-none lg:w-full object-contain drop-shadow-xl transition-transform duration-300 scale-150 sm:scale-110 lg:scale-125"
+    style={{ zIndex: 10 }}
+  />
+</div>
             <div className="col-span-2 row-start-2 lg:col-span-1 lg:row-auto lg:col-start-1 space-y-4 sm:space-y-5 mt-2">
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-start">
                 <button
