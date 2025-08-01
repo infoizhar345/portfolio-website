@@ -590,7 +590,7 @@ function HomePage() {
       {/* Image Right */}
 <div className="col-span-1 col-start-2 row-start-1 flex justify-end items-start">
   <img
-    src="/src/assets/IZHAR ULLAH GRAPIC DESIGNER.png"
+    src="https://i.postimg.cc/h492N8mM/izhar-1.jpg"
     alt="Izhar Ullah"
     className="w-full max-w-[220px] sm:max-w-[260px] md:max-w-[320px] object-contain transition-transform duration-300 scale-110 sm:scale-110 lg:scale-100 -mt-38 sm:-mt-6"
   />
