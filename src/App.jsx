@@ -73,7 +73,7 @@ function HomePage() {
       category: "Graphics Designing",
       subcategory: "Thumbnails",
       tertiary: "YouTube",
-      images: ["/src/assets/israel vs iran war.jpg", "/src/assets/Tom cruise net worth.jpg", "/src/assets/ai smart agent.png"],
+      images: ["https://i.postimg.cc/brkY9CV7/israel-vs-iran-war.jpg", "https://i.postimg.cc/SNLNXPM8/project-3.png", "https://i.postimg.cc/ZKz55mC4/Tom-cruise-net-worth.jpg"],
       video: null,
       views: "5.7K",
       date: "Oct 2024",
@@ -115,7 +115,7 @@ function HomePage() {
       category: "Graphics Designing",
       subcategory: "Print",
       tertiary: "Branding",
-      images: ["/src/assets/2.jpg", "/src/assets/3.jpg", "/src/assets/1.jpg"],
+      images: ["https://i.postimg.cc/d17VLt2t/1.jpg", "https://i.postimg.cc/5230rr91/2.jpg", "https://i.postimg.cc/B6dQD9p5/3.jpg"],
       video: null,
       views: "4.1K",
       date: "Jul 2024",
@@ -157,7 +157,7 @@ function HomePage() {
       category: "Graphics Designing",
       subcategory: "Print",
       tertiary: "Marketing",
-      images: ["/src/assets/a.jpg", "/src/assets/b.jpg", "/src/assets/c.jpg"],
+      images: ["https://i.postimg.cc/bvwJfRdn/a.jpg", "https://i.postimg.cc/Bv7vS11V/b.jpg", "https://i.postimg.cc/kMb5CGMT/c.jpg"],
       video: null,
       views: "4.1K",
       date: "Jul 2024",
@@ -181,12 +181,54 @@ function HomePage() {
   // Testimonials state
   const [showAllTestimonials, setShowAllTestimonials] = useState(false);
   const testimonials = [
-    { name: "Sarah Johnson", role: "CEO, TechStart Inc.", message: "The strategic approach completely transformed our digital presence. We saw a 300% increase in qualified leads within the first quarter. Absolutely game-changing! 🚀", avatar: "SJ", category: "SaaS Growth Strategy", rating: 5 },
-    { name: "Marcus Rodriguez", role: "Founder, E-commerce Pro", message: "Working with this team was like having a secret weapon. The content strategy alone generated over $500K in revenue. Best investment we've made! 💎", avatar: "MR", category: "Content Marketing", rating: 5 },
-    { name: "Emily Chen", role: "Marketing Director, Brand Co.", message: "The social media growth was incredible. From 2K to 50K followers in 6 months, but more importantly - real engagement and actual customers! 🎯", avatar: "EC", category: "Social Media Strategy", rating: 5 },
-    { name: "David Thompson", role: "Product Manager, InnovateLab", message: "The conversion optimization was mind-blowing. Our landing page went from 2% to 12% conversion rate. That's literally 6x more customers! 📈", avatar: "DT", category: "CRO Campaign", rating: 5 },
-    { name: "Lisa Wang", role: "Startup Founder", message: "From zero to $100K in first month launch. The strategic planning and execution was flawless. This is what professional digital marketing looks like! ⭐", avatar: "LW", category: "Product Launch", rating: 5 },
-    { name: "Alex Kumar", role: "CMO, Growth Ventures", message: "The ROI speaks for itself. Every dollar invested returned $15 in revenue. Strategic thinking combined with flawless execution = success! 🏆", avatar: "AK", category: "Full Strategy", rating: 5 }
+{
+    name: "Ahsan Raza",
+    role: "Founder, DigiBrands PK",
+    message: "In just 10 days, the thumbnails and video edits doubled our YouTube channel engagement. Ahsan's creativity and speed are unmatched in Pakistan! 🔥",
+    avatar: "AR",
+    category: "YouTube Branding",
+    rating: 5
+  },
+  {
+    name: "Priya Mehra",
+    role: "Content Creator, Delhi Vlogs",
+    message: "My reels finally started going viral after working with this editor. Every transition and cut was on point. Absolute game-changer for my Instagram growth! 🎬",
+    avatar: "PM",
+    category: "Short-Form Video Editing",
+    rating: 4
+  },
+  {
+    name: "Faisal Al-Hamdan",
+    role: "Marketing Head, Riyadh Tech",
+    message: "From logo animation to complete explainer videos – everything was top-tier. The professionalism and creativity exceeded our expectations. 🇸🇦💼",
+    avatar: "FH",
+    category: "Corporate Video Design",
+    rating: 5
+  },
+  {
+    name: "Jessica Lee",
+    role: "Creative Director, NY Startups",
+    message: "The branding package was visually stunning. Our pitch deck and launch videos helped us secure funding. Highly recommended for any serious startup! 🚀",
+    avatar: "JL",
+    category: "Startup Branding",
+    rating: 5
+  },
+  {
+    name: "Ahmed Malik",
+    role: "Influencer, Karachi Eats",
+    message: "My food vlog went from casual to cinematic! The editing, music sync, and color grading brought it to life. Perfect for content creators in Pakistan. 📹",
+    avatar: "AM",
+    category: "Vlog Editing",
+    rating: 5
+  },
+  {
+    name: "Rajiv Singh",
+    role: "CEO, AdBoost India",
+    message: "We saw 3x increase in click-through rates just from updated ad creatives. He knows how to design for conversions. 💼📊",
+    avatar: "RS",
+    category: "Ad Creatives",
+    rating: 5
+  }
   ];
   const visibleTestimonials = showAllTestimonials ? testimonials : testimonials.slice(0, 3);
 
@@ -283,12 +325,12 @@ function HomePage() {
             </div>
            <div className="col-span-1 col-start-2 row-start-1 flex justify-end lg:col-start-2 lg:justify-center">
   <img
-    src="/images/grapic-designer-png.png"
+    src="https://i.postimg.cc/QVZGNjbP/Adobe-Express-file-1.png"
     alt="Professional Portrait"
     loading="eager"
     fetchPriority="high"
     decoding="async"
-    className="w-full max-w-[160px] sm:max-w-[220px] md:max-w-[280px] lg:max-w-none lg:w-full object-contain drop-shadow-xl transition-transform duration-300 scale-150 sm:scale-110 lg:scale-125"
+    className="w-full max-w-[160px] sm:max-w-[220px] md:max-w-[280px] lg:max-w-none lg:w-full object-contain drop-shadow-x5 transition-transform duration-300 scale-150 sm:scale-110 lg:scale-120"
     style={{ zIndex: 10 }}
   />
 </div>
@@ -617,7 +659,7 @@ function HomePage() {
         className="flex flex-col items-center group"
       >
         <img
-          src="/src/assets/Whatsapp 1.PNG"
+          src="https://i.postimg.cc/2Sfrr796/whatsapp-1.png"
           alt="WhatsApp"
           className="w-20 h-20 transform group-hover:scale-110 group-hover:shadow-[0_0_24px_8px_#ff9900] transition-all duration-300 ease-in-out hover:rotate-12"
         />
@@ -629,7 +671,7 @@ function HomePage() {
         className="flex flex-col items-center group"
       >
         <img
-          src="/src/assets/email.png"
+          src="https://i.postimg.cc/vHnbJNzk/email.png"
           alt="Email"
           className="w-20 h-20 transform group-hover:scale-110 group-hover:shadow-[0_0_24px_8px_#ff9900] transition-all duration-300 ease-in-out hover:rotate-12"
         />
@@ -637,13 +679,13 @@ function HomePage() {
       </a>
       {/* LinkedIn */}
       <a
-        href="https://linkedin.com/in/yourprofile"
+        href="https://www.linkedin.com/in/izhar345/"
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-col items-center group"
       >
         <img
-          src="/src/assets/social.png"
+          src="https://i.postimg.cc/y6t7rHF0/social.png"
           alt="LinkedIn"
           className="w-20 h-20 transform group-hover:scale-110 group-hover:shadow-[0_0_24px_8px_#ff9900] transition-all duration-300 ease-in-out hover:rotate-12"
         />
