@@ -181,56 +181,56 @@ function HomePage() {
   // Testimonials state
   const [showAllTestimonials, setShowAllTestimonials] = useState(false);
   const testimonials = [
-{
-    name: "Ahsan Raza",
-    role: "Founder, DigiBrands PK",
-    message: "In just 10 days, the thumbnails and video edits doubled our YouTube channel engagement. Ahsan's creativity and speed are unmatched in Pakistan! 🔥",
-    avatar: "AR",
-    category: "YouTube Branding",
-    rating: 5
-  },
-  {
-    name: "Priya Mehra",
-    role: "Content Creator, Delhi Vlogs",
-    message: "My reels finally started going viral after working with this editor. Every transition and cut was on point. Absolute game-changer for my Instagram growth! 🎬",
-    avatar: "PM",
-    category: "Short-Form Video Editing",
-    rating: 4
-  },
-  {
-    name: "Faisal Al-Hamdan",
-    role: "Marketing Head, Riyadh Tech",
-    message: "From logo animation to complete explainer videos – everything was top-tier. The professionalism and creativity exceeded our expectations. 🇸🇦💼",
-    avatar: "FH",
-    category: "Corporate Video Design",
-    rating: 5
-  },
-  {
-    name: "Jessica Lee",
-    role: "Creative Director, NY Startups",
-    message: "The branding package was visually stunning. Our pitch deck and launch videos helped us secure funding. Highly recommended for any serious startup! 🚀",
-    avatar: "JL",
-    category: "Startup Branding",
-    rating: 5
-  },
-  {
-    name: "Ahmed Malik",
-    role: "Influencer, Karachi Eats",
-    message: "My food vlog went from casual to cinematic! The editing, music sync, and color grading brought it to life. Perfect for content creators in Pakistan. 📹",
-    avatar: "AM",
-    category: "Vlog Editing",
-    rating: 5
-  },
-  {
-    name: "Rajiv Singh",
-    role: "CEO, AdBoost India",
-    message: "We saw 3x increase in click-through rates just from updated ad creatives. He knows how to design for conversions. 💼📊",
-    avatar: "RS",
-    category: "Ad Creatives",
-    rating: 5
-  }
+    {
+      name: "Ahsan Raza",
+      role: "Founder, DigiBrands PK",
+      message: "In just 10 days, the thumbnails and video edits doubled our YouTube channel engagement. Ahsan's creativity and speed are unmatched in Pakistan! 🔥",
+      avatar: "AR",
+      category: "YouTube Branding",
+      rating: 5
+    },
+    {
+      name: "Priya Mehra",
+      role: "Content Creator, Delhi Vlogs",
+      message: "My reels finally started going viral after working with this editor. Every transition and cut was on point. Absolute game-changer for my Instagram growth! 🎬",
+      avatar: "PM",
+      category: "Short-Form Video Editing",
+      rating: 4
+    },
+    {
+      name: "Faisal Al-Hamdan",
+      role: "Marketing Head, Riyadh Tech",
+      message: "From logo animation to complete explainer videos – everything was top-tier. The professionalism and creativity exceeded our expectations. 🇸🇦💼",
+      avatar: "FH",
+      category: "Corporate Video Design",
+      rating: 5
+    },
+    {
+      name: "Jessica Lee",
+      role: "Creative Director, NY Startups",
+      message: "The branding package was visually stunning. Our pitch deck and launch videos helped us secure funding. Highly recommended for any serious startup! 🚀",
+      avatar: "JL",
+      category: "Startup Branding",
+      rating: 5
+    },
+    {
+      name: "Ahmed Malik",
+      role: "Influencer, Karachi Eats",
+      message: "My food vlog went from casual to cinematic! The editing, music sync, and color grading brought it to life. Perfect for content creators in Pakistan. 📹",
+      avatar: "AM",
+      category: "Vlog Editing",
+      rating: 5
+    },
+    {
+      name: "Rajiv Singh",
+      role: "CEO, AdBoost India",
+      message: "We saw 3x increase in click-through rates just from updated ad creatives. He knows how to design for conversions. 💼📊",
+      avatar: "RS",
+      category: "Ad Creatives",
+      rating: 5
+    }
   ];
-  const visibleTestimonials = showAllTestimonials ? testimonials : testimonials.slice(0, 3);
+  const visibleTestimonials = showAllTestimonials ? testimonials : testimonials.slice(0, 4);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -323,17 +323,17 @@ function HomePage() {
                 Helping brands grow with smart design, video storytelling, and data-driven digital marketing.
               </p>
             </div>
-           <div className="col-span-1 col-start-2 row-start-1 flex justify-end lg:col-start-2 lg:justify-center">
-  <img
-    src="https://i.postimg.cc/QVZGNjbP/Adobe-Express-file-1.png"
-    alt="Professional Portrait"
-    loading="eager"
-    fetchPriority="high"
-    decoding="async"
-    className="w-full max-w-[160px] sm:max-w-[220px] md:max-w-[280px] lg:max-w-none lg:w-full object-contain drop-shadow-x5 transition-transform duration-300 scale-150 sm:scale-110 lg:scale-120"
-    style={{ zIndex: 10 }}
-  />
-</div>
+            <div className="col-span-1 col-start-2 row-start-1 flex justify-end lg:col-start-2 lg:justify-center">
+              <img
+                src="https://i.postimg.cc/QVZGNjbP/Adobe-Express-file-1.png"
+                alt="Professional Portrait"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="w-full max-w-[160px] sm:max-w-[220px] md:max-w-[280px] lg:max-w-none lg:w-full object-contain drop-shadow-x5 transition-transform duration-300 scale-150 sm:scale-110 lg:scale-120"
+                style={{ zIndex: 10 }}
+              />
+            </div>
             <div className="col-span-2 row-start-2 lg:col-span-1 lg:row-auto lg:col-start-1 space-y-4 sm:space-y-5 mt-2">
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-start">
                 <button
@@ -392,7 +392,7 @@ function HomePage() {
               From strategy to execution, every project reflects a story of growth. See how design and data have powered success across industries.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {visibleProjects.map((project) => (
               <div
                 key={project.id}
@@ -506,198 +506,198 @@ function HomePage() {
         </div>
       </section>
 
- {/* Testimonials */}
-<section id="testimonials" className="section-padding">
-  <div className="container-max">
-    <div className="text-center mb-12">
-      <div className="flex items-center justify-center gap-2 text-primary text-sm font-semibold mb-3">
-        <span>💬</span>
-        <span>REAL RESULTS. REAL CLIENTS</span>
-      </div>
-      <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-        Proven Results <span className="text-primary">Trusted Clients</span>
-      </h2>
-      <p className="text-muted-foreground max-w-3xl mx-auto px-2">
-        Don’t just take my word for it — see what industry leaders have to say.
-      </p>
-    </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-      {visibleTestimonials.map((t, index) => (
-        <div key={index} className="bg-card p-3 sm:p-6 rounded-lg card-hover min-w-[140px]">
-          <div className="mb-3 sm:mb-4">
-            <span className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
-              {t.category}
-            </span>
-            <div className="flex gap-1 mt-1">
-              {[...Array(t.rating)].map((_, i) => (
-                <span key={i} className="text-primary">⭐</span>
-              ))}
+      {/* Testimonials */}
+      <section id="testimonials" className="section-padding">
+        <div className="container-max">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-2 text-primary text-sm font-semibold mb-3">
+              <span>💬</span>
+              <span>REAL RESULTS. REAL CLIENTS</span>
             </div>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-3">
+              Proven Results <span className="text-primary">Trusted Clients</span>
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto px-2">
+              Don’t just take my word for it — see what industry leaders have to say.
+            </p>
           </div>
-          <blockquote className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 italic">
-            "{t.message}"
-          </blockquote>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center font-bold text-primary">
-                {t.avatar}
-              </div>
-              <div>
-                <h4 className="text-sm sm:font-semibold">{t.name}</h4>
-                <p className="text-xs sm:text-sm text-muted-foreground">{t.role}</p>
-              </div>
-            </div>
-            <div className="text-right">
-              <div className="text-sm sm:text-base text-primary font-bold">{t.metric || ''}</div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-    <div className="text-center mt-6">
-      <button
-        className="bg-primary/20 text-primary border border-primary px-5 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
-        onClick={() => setShowAllTestimonials(!showAllTestimonials)}
-      >
-        {showAllTestimonials ? 'View Less' : 'View All'}
-      </button>
-    </div>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-12 text-center">
-      <div>
-        <div className="text-2xl sm:text-3xl font-bold text-primary">98%</div>
-        <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-      </div>
-      <div>
-        <div className="text-2xl sm:text-3xl font-bold text-primary">50+</div>
-        <div className="text-sm text-muted-foreground">Success Stories</div>
-      </div>
-      <div>
-        <div className="text-2xl sm:text-3xl font-bold text-primary">$2M+</div>
-        <div className="text-sm text-muted-foreground">Revenue Generated</div>
-      </div>
-      <div>
-        <div className="text-2xl sm:text-3xl font-bold text-primary">15x</div>
-        <div className="text-sm text-muted-foreground">Average ROI</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-      {/* About */}
-<section id="about" className="section-padding bg-card">
-  <div className="container-max">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl sm:text-4xl font-bold">
-        THE STRATEGIC MIND BEHIND <span className="text-primary">THE RESULTS</span>
-      </h2>
-    </div>
-    <div className="grid grid-cols-2 gap-6 sm:gap-12 items-center">
-      {/* Text Left */}
-      <div className="col-span-1 col-start-1 row-start-1 space-y-6">
-        {/* Name */}
-        <h3 className="text-2xl font-bold text-primary mb-1">IZHAR ULLAH</h3>
-        {/* Title */}
-    <div className="text-sm sm:text-lg font-bold text-white mb-2">
-  Graphics Designer and Video Editor
-</div>
-        {/* Paragraph */}
-        <p className="text-muted-foreground mb-4">
-          Every successful business needs a strategic advantage. I help you discover yours through data-driven insights, compelling content, and conversion-focused campaigns.
-        </p>
-        {/* Core Expertise */}
-        <div className="space-y-4">
-          <h4 className="text-lg font-semibold leading-tight">Core Expertise</h4>
-          <div className="space-y-5">
-            {[
-              { skill: "Digital Strategy", level: 95 },
-              { skill: "Content Marketing", level: 90 },
-              { skill: "Social Media Growth", level: 88 }
-            ].map((item, index) => (
-              <div key={index}>
-                <div className="flex justify-between items-center mb-1 text-sm">
-                  <span className="font-medium">{item.skill}</span>
-                  <span className="text-primary">{item.level}%</span>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+            {visibleTestimonials.map((t, index) => (
+              <div key={index} className="group card-hover bg-card rounded-lg p-3 sm:p-4 min-w-[120px] flex flex-col">
+                <div className="mb-2 sm:mb-3">
+                  <span className="bg-primary/20 text-primary px-2 py-1 rounded-full text-xs sm:text-sm font-semibold">
+                    {t.category}
+                  </span>
+                  <div className="flex gap-1 mt-1">
+                    {[...Array(t.rating)].map((_, i) => (
+                      <span key={i} className="text-primary text-xs sm:text-sm">⭐</span>
+                    ))}
+                  </div>
                 </div>
-                <div className="w-full bg-secondary rounded-full h-1.5">
-                  <div
-                    className="bg-primary h-1.5 rounded-full transition-all duration-1000"
-                    style={{ width: `${item.level}%` }}
-                  />
+                <blockquote className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3 italic flex-grow line-clamp-4">
+                  "{t.message}"
+                </blockquote>
+                <div className="flex items-center justify-between mt-auto">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/20 rounded-full flex items-center justify-center font-bold text-primary text-xs sm:text-sm">
+                      {t.avatar}
+                    </div>
+                    <div>
+                      <h4 className="text-xs sm:text-sm font-semibold">{t.name}</h4>
+                      <p className="text-[10px] sm:text-xs text-muted-foreground">{t.role}</p>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-xs sm:text-sm text-primary font-bold">{t.metric || ''}</div>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+          <div className="text-center mt-6">
+            <button
+              className="bg-primary/20 text-primary border border-primary px-5 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
+              onClick={() => setShowAllTestimonials(!showAllTestimonials)}
+            >
+              {showAllTestimonials ? 'View Less' : 'View All'}
+            </button>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-12 text-center">
+            <div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary">98%</div>
+              <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+            </div>
+            <div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary">50+</div>
+              <div className="text-sm text-muted-foreground">Success Stories</div>
+            </div>
+            <div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary">$2M+</div>
+              <div className="text-sm text-muted-foreground">Revenue Generated</div>
+            </div>
+            <div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary">15x</div>
+              <div className="text-sm text-muted-foreground">Average ROI</div>
+            </div>
+          </div>
         </div>
-      </div>
-      {/* Image Right */}
-<div className="col-span-1 col-start-2 row-start-1 flex justify-end items-start">
-  <img
-    src="https://i.postimg.cc/h492N8mM/izhar-1.jpg"
-    alt="Izhar Ullah"
-    className="w-full max-w-[220px] sm:max-w-[260px] md:max-w-[320px] object-contain transition-transform duration-300 scale-110 sm:scale-110 lg:scale-100 -mt-38 sm:-mt-6"
-  />
-</div>
-    </div>
-  </div>
-</section>
+      </section>
 
- {/* Contact */}
-<section id="contact" className="section-padding bg-gray-901 text-white">
-  <div className="container-max text-center">
-    <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">
-      Ready to Make Your <span className="text-primary">Strategic Move?</span>
-    </h2>
-    <p className="text-base sm:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto px-2">
-      Stop playing defense in the digital marketplace. It's time to go on the offensive with strategies that deliver real, measurable results.
-    </p>
-    <div className="flex flex-row flex-wrap justify-center gap-6 mb-8 mt-10">
-      {/* WhatsApp */}
-      <a
-        href="https://wa.me/923411673117"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex flex-col items-center group"
-      >
-        <img
-          src="https://i.postimg.cc/2Sfrr796/whatsapp-1.png"
-          alt="WhatsApp"
-          className="w-20 h-20 transform group-hover:scale-110 group-hover:shadow-[0_0_24px_8px_#ff9900] transition-all duration-300 ease-in-out hover:rotate-12"
-        />
-        <span className="mt-2 text-sm group-hover:text-primary transition-colors duration-300">WhatsApp</span>
-      </a>
-      {/* Email */}
-      <a
-        href="mailto:infoizhar345@gmail.com"
-        className="flex flex-col items-center group"
-      >
-        <img
-          src="https://i.postimg.cc/vHnbJNzk/email.png"
-          alt="Email"
-          className="w-20 h-20 transform group-hover:scale-110 group-hover:shadow-[0_0_24px_8px_#ff9900] transition-all duration-300 ease-in-out hover:rotate-12"
-        />
-        <span className="mt-2 text-sm group-hover:text-primary transition-colors duration-300">Email</span>
-      </a>
-      {/* LinkedIn */}
-      <a
-        href="https://www.linkedin.com/in/izhar345/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex flex-col items-center group"
-      >
-        <img
-          src="https://i.postimg.cc/y6t7rHF0/social.png"
-          alt="LinkedIn"
-          className="w-20 h-20 transform group-hover:scale-110 group-hover:shadow-[0_0_24px_8px_#ff9900] transition-all duration-300 ease-in-out hover:rotate-12"
-        />
-        <span className="mt-2 text-sm group-hover:text-primary transition-colors duration-300">LinkedIn</span>
-      </a>
-      {/* Add more icons as needed */}
-    </div>
-    <button className="btn-primary btn-glow text-lg px-8 py-4">
-      Let's Strategize Together
-    </button>
-  </div>
-</section>
+      {/* About */}
+      <section id="about" className="section-padding bg-card">
+        <div className="container-max">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold">
+              THE STRATEGIC MIND BEHIND <span className="text-primary">THE RESULTS</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 gap-6 sm:gap-12 items-center">
+            {/* Text Left */}
+            <div className="col-span-1 col-start-1 row-start-1 space-y-6">
+              {/* Name */}
+              <h3 className="text-2xl font-bold text-primary mb-1">IZHAR ULLAH</h3>
+              {/* Title */}
+              <div className="text-sm sm:text-lg font-bold text-white mb-2">
+                Graphics Designer and Video Editor
+              </div>
+              {/* Paragraph */}
+              <p className="text-muted-foreground mb-4">
+                Every successful business needs a strategic advantage. I help you discover yours through data-driven insights, compelling content, and conversion-focused campaigns.
+              </p>
+              {/* Core Expertise */}
+              <div className="space-y-4">
+                <h4 className="text-lg font-semibold leading-tight">Core Expertise</h4>
+                <div className="space-y-5">
+                  {[
+                    { skill: "Digital Strategy", level: 95 },
+                    { skill: "Content Marketing", level: 90 },
+                    { skill: "Social Media Growth", level: 88 }
+                  ].map((item, index) => (
+                    <div key={index}>
+                      <div className="flex justify-between items-center mb-1 text-sm">
+                        <span className="font-medium">{item.skill}</span>
+                        <span className="text-primary">{item.level}%</span>
+                      </div>
+                      <div className="w-full bg-secondary rounded-full h-1.5">
+                        <div
+                          className="bg-primary h-1.5 rounded-full transition-all duration-1000"
+                          style={{ width: `${item.level}%` }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* Image Right */}
+            <div className="col-span-1 col-start-2 row-start-1 flex justify-end items-start">
+              <img
+                src="https://i.postimg.cc/h492N8mM/izhar-1.jpg"
+                alt="Izhar Ullah"
+                className="w-full max-w-[220px] sm:max-w-[260px] md:max-w-[320px] object-contain transition-transform duration-300 scale-110 sm:scale-110 lg:scale-100 -mt-38 sm:-mt-6"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="section-padding bg-gray-901 text-white">
+        <div className="container-max text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">
+            Ready to Make Your <span className="text-primary">Strategic Move?</span>
+          </h2>
+          <p className="text-base sm:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto px-2">
+            Stop playing defense in the digital marketplace. It's time to go on the offensive with strategies that deliver real, measurable results.
+          </p>
+          <div className="flex flex-row flex-wrap justify-center gap-6 mb-8 mt-10">
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/923411673117"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center group"
+            >
+              <img
+                src="https://i.postimg.cc/2Sfrr796/whatsapp-1.png"
+                alt="WhatsApp"
+                className="w-20 h-20 transform group-hover:scale-110 group-hover:shadow-[0_0_24px_8px_#ff9900] transition-all duration-300 ease-in-out hover:rotate-12"
+              />
+              <span className="mt-2 text-sm group-hover:text-primary transition-colors duration-300">WhatsApp</span>
+            </a>
+            {/* Email */}
+            <a
+              href="mailto:infoizhar345@gmail.com"
+              className="flex flex-col items-center group"
+            >
+              <img
+                src="https://i.postimg.cc/vHnbJNzk/email.png"
+                alt="Email"
+                className="w-20 h-20 transform group-hover:scale-110 group-hover:shadow-[0_0_24px_8px_#ff9900] transition-all duration-300 ease-in-out hover:rotate-12"
+              />
+              <span className="mt-2 text-sm group-hover:text-primary transition-colors duration-300">Email</span>
+            </a>
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/izhar345/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center group"
+            >
+              <img
+                src="https://i.postimg.cc/y6t7rHF0/social.png"
+                alt="LinkedIn"
+                className="w-20 h-20 transform group-hover:scale-110 group-hover:shadow-[0_0_24px_8px_#ff9900] transition-all duration-300 ease-in-out hover:rotate-12"
+              />
+              <span className="mt-2 text-sm group-hover:text-primary transition-colors duration-300">LinkedIn</span>
+            </a>
+            {/* Add more icons as needed */}
+          </div>
+          <button className="btn-primary btn-glow text-lg px-8 py-4">
+            Let's Strategize Together
+          </button>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-card py-8">
@@ -708,16 +708,16 @@ function HomePage() {
         </div>
       </footer>
 
-{/* Floating CTA */}
-<div className="fixed bottom-4 right-4 z-50 lg:hidden">
-  <button
-    id="floating-cta-button"
-    onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}
-    className="w-18 h-18 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:bg-primary-dark transition-all duration-300"
-  >
-    📩
-  </button>
-</div>
+      {/* Floating CTA */}
+      <div className="fixed bottom-4 right-4 z-50 lg:hidden">
+        <button
+          id="floating-cta-button"
+          onClick={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}
+          className="w-18 h-18 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:bg-primary-dark transition-all duration-300"
+        >
+          📩
+        </button>
+      </div>
     </div>
   );
 }
